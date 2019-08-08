@@ -1,7 +1,12 @@
 namespace ShapeWorld.Domain.Models
 {
-  public class Cirlce
+  public class Circle : Shape
   {
-    // points that are equidistant from the center
+    public override double Surface()
+    {
+      return 0;
+    }
+    // height = 
+    public Circle() : base(int.MaxValue) {}
   }
 }

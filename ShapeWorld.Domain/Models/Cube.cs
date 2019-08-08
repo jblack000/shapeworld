@@ -1,7 +1,14 @@
+using ShapeWorld.Domain.Interfaces;
 namespace ShapeWorld.Domain.Models
 {
-  public class Cube
+  public class Cube : Square, IThreeD
   {
-    // a shape that contains six equal squares
+    public double Height { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
+
+    public override double Surface()
+    {
+      return 0;
+    }
+    
   }
 }

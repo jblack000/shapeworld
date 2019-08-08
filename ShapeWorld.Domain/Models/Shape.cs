@@ -26,5 +26,10 @@ namespace ShapeWorld.Domain.Models
       {
         NumberOfEdges = edges;
       }
+
+      public override string ToString()
+      {
+          return $"{this.GetType().Name} {NumberOfEdges}"; // GetType() uses reflection
+      }
     }
 }
